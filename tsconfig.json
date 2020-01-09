@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "target": "es5",
+    "baseUrl": "./src/",
+    "esModuleInterop": true,
+    "lib": [
+      "es2015"
+    ],
+    "paths": {
+      "@app/*": [
+        "app/*"
+      ],
+      "@models/*": [
+        "models/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "typeRoots": [
+        "./types",
+        "./node_modules/@types"
+      ],
+      "types": [
+        "Phaser"
+      ]
+    }
+  },
+  "include": [
+    "src/*",
+    "src/scenes/LoadScene.ts",
+    "src/scenes/EncounterScene.ts",
+    "src/game-objects/WarningLine.ts",
+    "src/data/Data.ts",
+    "src/data/Enemies.ts"
+  ]
+}
